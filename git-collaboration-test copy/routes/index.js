@@ -8,7 +8,11 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
-router.get('/student3', function (req, res) {
+router.get('/student3', function (req, res, next) {
   res.render('student3');
 })
+router.get('/student-one', (req, res, next) => {
+  res.render('student-one');
+})
+
 module.exports = router;
