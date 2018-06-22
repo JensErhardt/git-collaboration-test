@@ -11,8 +11,13 @@ router.get('/', (req, res, next) => {
 router.get('/student3', function (req, res, next) {
   res.render('student3');
 })
+
 router.get('/student-one', (req, res, next) => {
   res.render('student-one');
+})
+
+router.get('/student-three', (req, res, next) => {
+  res.render('student-three');
 })
 
 module.exports = router;
